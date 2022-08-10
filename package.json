@@ -4,7 +4,10 @@
   "description": "start gulp",
   "main": "index.js",
   "scripts": {
-    "start": "gulp default"
+    "start": "gulp default",
+    "build": "gulp build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist/"
   },
   "license": "ISC",
   "devDependencies": {
