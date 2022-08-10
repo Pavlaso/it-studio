@@ -56,7 +56,7 @@
     max-width: 1115px;
     margin: 110px auto 105px;
     &__title {
-        color: #323232;
+        color: $dark;
         font-weight: 700;
         font-size: 36px;
         line-height: 53px;
@@ -73,7 +73,7 @@
         text-align: center;
         max-width: 730px;
         text-align: center;
-        color: #999999;
+        color: $grey;
         line-height: 25px;
         font-weight: 400;
     }
@@ -111,7 +111,7 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
-        color: #999999;
+        color: $grey;
     }
 }
 
@@ -132,13 +132,13 @@
         font-weight: 700;
         font-size: 36px;
         line-height: 53px;
-        color: #323232;
+        color: $dark;
     }
     &__text {
         max-width: 490px;
         font-weight: 400;
         line-height: 25px;
-        color: #999999;
+        color: $grey;
         margin: 40px 0 30px;
     }
     &__items {
@@ -178,7 +178,7 @@
     &__item-desc {
         font-weight: 400;
         line-height: 25px;
-        color: #999999;
+        color: $grey;
     }
     
 }
@@ -198,7 +198,7 @@
         margin: 50px auto 70px;
         font-weight: 400;
         line-height: 25px;
-        color: #999999;
+        color: $grey;
         text-align: center;
     }
     &__slider {
@@ -268,7 +268,7 @@
     &__text {
         font-size: 16px;
         line-height: 25px;
-        color: #999999;
+        color: $grey;
         margin: 20px 0 30px;
     }
     &__form {
@@ -287,11 +287,11 @@
         &::placeholder {
             font-size: 13px;
             line-height: 21px;
-            color: #999999;
+            color: $grey;
         }
     }
     &__btn {
-        background-color: #4985FF;
+        background-color: $white-blue;
         color: #fff;
         padding: 13px 36px 15px 26px;
         font-weight: 500;
@@ -302,19 +302,19 @@
         &:hover {
             font-weight: 600;
             cursor: pointer;
-            background-color: #2253b7;
+            background-color: $blue;
         }
     }
     &__deck {
         font-size: 13px;
         line-height: 21px;
         font-weight: 400;
-        color: #999999;
+        color: $grey;
     }
     
 }
 .footer {
-    background: #F6F6F8;
+    background: $grey-bg;
     &__elements {
         display: flex;
         justify-content: center;
@@ -345,13 +345,13 @@
         }
     }
     &__element-text {
-        color: #999999;
+        color: $grey;
         font-weight: 400;
         font-size: 14px;
         line-height: 22px;
     }
     &__element-link {
-        color: #999999;
+        color: $grey;
     }
     &__copyright-text {
         text-align: center;
@@ -359,7 +359,7 @@
         font-weight: 400;
         font-size: 13px;
         line-height: 21px;
-        color: #999999;
+        color: $grey;
         position: relative;
         margin-top: 30px;
         &::before {

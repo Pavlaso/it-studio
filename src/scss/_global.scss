@@ -6,7 +6,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 .button {
-   background: #4985FF; 
+   background: $white-blue; 
    display: block;
    margin: 0 auto;
    padding: 13px 0 15px;
@@ -20,7 +20,7 @@ body {
    &:hover {
         font-weight: 600;
         cursor: pointer;
-        background-color: #2253b7;
+        background-color: $blue$white-blue;
    }
 }
 
@@ -29,7 +29,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     text-decoration-line: underline;
-    color: #4985FF;
+    color: $white-blue;
 }
 
 
@@ -128,5 +128,5 @@ body {
     border-bottom-left-radius: 0.3rem;
   }
   .bg-gray {
-    background: #F6F6F8;
+    background: $grey-bg;
   }
