@@ -8,7 +8,7 @@ let gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('clean', async function(){
-  del.sync('dist')
+   del.sync('dist')
 })
 
 gulp.task('scss', function(){
@@ -59,7 +59,7 @@ gulp.task('browser-sync', function() {
   });
 });
 
-gulp.task('export', function(){
+gulp.task('export', async function(){
   let buildHtml = gulp.src('src/**/*.html')
     .pipe(gulp.dest('dist'));
 
@@ -82,6 +82,6 @@ gulp.task('watch', function(){
   gulp.watch('src/js/*.js', gulp.parallel('script'))
 });
 
-gulp.task('build', gulp.series('clean', 'export'))
+gulp.task('build',  gulp.series('clean', 'export'))
 
 gulp.task('default', gulp.parallel('css' ,'scss', 'js', 'browser-sync', 'watch'));
