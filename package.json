@@ -1,0 +1,26 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "description": "start gulp",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp default"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "del": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-sass": "^5.1.0",
+    "jquery": "^3.6.0",
+    "sass": "^1.53.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}

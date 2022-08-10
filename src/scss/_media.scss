@@ -1,0 +1,109 @@
+@media (max-width: 1250px) {
+    .projects__slider {
+        width: 900px;
+        margin: 0 auto;
+    }
+    .projects__slider-item {
+        width: 255px;
+        height: 255px;
+        padding: 0 12px;
+    }
+    .header__list {
+        justify-content: center;
+        padding-left: 0px;
+    }
+    // .projects {
+    //     display: none;
+    // }
+}
+
+@media (max-width: 1060px) {
+    .services {
+        &__item-img {
+            margin-top: 0px;
+        }
+        &__item {
+           margin-bottom: 20px;
+        }
+        &__items {
+            margin-bottom: 20px;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 940px) {
+    .news {
+        &__standards {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+        &__title {
+            max-width: 490px;
+        }
+        &__text {
+            max-width: 490px;
+            margin: 30px 0 20px;
+        }
+        &__desc {
+            max-width: 490px;
+            margin: 0px auto 40px;
+        }
+        // &__img {
+        //     display: none;
+        // }
+    }
+    .projects__slider {
+        width: 100%;
+     }
+}
+@media (max-width: 620px) {
+    .header {
+        &__list {
+            display: none;
+        }
+        &__content {
+            padding-top: 50%;
+        }
+        &__title {
+            font-size: 42px;
+            line-height: 56px;
+        }
+    }
+    .news__img {
+        width: 100%;
+     }
+     .projects__slider {
+       width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .projects__slider-item {
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+
+     }
+}
+@media (max-width: 375px) {
+    .mailing {
+        &__form {
+            display: block;
+        }
+        &__input {
+            width: 300px;
+            padding: 12px 0 12px;
+            box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+            border-radius: 30px;
+            padding-left: 33px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        &__btn {
+            padding: 13px 26px 13px 26px;
+            width: 300px;
+            border-radius: 30px;
+        }
+    }
+}
