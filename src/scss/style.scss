@@ -4,6 +4,9 @@
 @import "reset";
 @import "global";
 
+.burger-menu {
+    display: none;
+}
 
 .header {
     background: url(../img/Rectangle.jpg) top center/cover no-repeat ;
@@ -16,6 +19,8 @@
         padding-left: 50%;
         margin-bottom: 220px;
         position: relative;
+        transition: all 0.3s ease 0s;
+
         &::after {
             content: '';
             position: absolute;
@@ -24,10 +29,9 @@
             width: 100%;
             left: 0;
             bottom: 0;
+            transition: all 0.3s ease 0s;
+
         }
-        // &:last-child {
-        //     margin-right: 0;
-        // }
     }
     &__list-item-link {
         color: #fff;
@@ -36,10 +40,24 @@
         color: #fff;
     }
     &__list-item {
+        width: 20%;
         margin-right: 40px;  
+        border-bottom: 2px solid transparent;
+        &--long {
+            width: 31%;
+        }
+        &--first {
+            width: 17%;
+        }
+        &--third {
+            width: 15%;
+        }
+        &--fourth {
+            width: 18%;
+        }
         &:hover {
-            font-weight: 700;
             cursor: pointer;
+            font-weight: 700;
             border-bottom: 2px solid #fff;
         }
     }
@@ -206,7 +224,6 @@
         width: 100%;
     }
     &__slider-item {
-        max-width: 255px;
         height: 255px;
         padding: 0 12px;
     }

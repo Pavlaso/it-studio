@@ -12,30 +12,32 @@
 </head>
 <body>
  
-  <header class="header" id="main">
+  <div class="burger-menu" id="burger-menu"></div>
 
-    <ul class="header__list">
-      <li class="header__list-item header__list-item--active"> 
+  <header class="header" id="main">
+    <div class="header__burger" id="burger"><span></span></div>
+    <ul class="header__list active">
+      <li class="header__list-item header__list-item--active header__list-item--first"> 
         <a class="header__list-item-link" href="#main">
           Главная
         </a>
       </li>
-      <li class="header__list-item">
-        <a class="header__list-item-link" href="#projects">
+      <li class="header__list-item header__list-item--long">
+        <a class="header__list-item-link " href="#projects">
           Наши проекты
         </a>
       </li>
-      <li class="header__list-item">
+      <li class="header__list-item header__list-item--third">
         <a class="header__list-item-link" href="#services">
           Услуги
         </a>
       </li>
-      <li class="header__list-item">
+      <li class="header__list-item header__list-item--fourth">
         <a class="header__list-item-link" href="#news">
           Новости
         </a>
       </li>
-      <li class="header__list-item">
+      <li class="header__list-item header__list-item--fifth">
         <a class="header__list-item-link" href="#contacts">
           Контакты
         </a>
@@ -209,8 +211,19 @@
       Полезные статьи, акции, новости - получите все это сейчас!
     </div>
     <form class="mailing__form">
-      <input type="text" class="mailing__input" placeholder="Ваш e-mail" required>
-      <button class="mailing__btn" id="show-modal">
+      <input 
+        class="mailing__input" 
+        id="emailAddress" 
+        placeholder="Ваш e-mail"  
+        type="email" 
+        maxLength="64" 
+        pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+        required
+      >
+      <button 
+        class="mailing__btn" 
+        id="show-modal"
+      >
         Подписаться
       </button>
     </form>
@@ -225,7 +238,7 @@
       <div class="footer__element">
         <h3 class="footer__element-title">
           Контактная информация
-        </div>
+        </h3>
         <div class="footer__element-content">
           <div class="footer__element-content-item">
             <div class="footer__element-icon footer__element-icon--svg">
@@ -253,11 +266,11 @@
           </div>
         </div>
       </div>
-  
+        
       <div class="footer__element">
         <h3 class="footer__element-title">
           Основные ссылки
-        </div>
+        </h3>
         <div class="footer__element-content">
           <div class="footer__element-content-item">
             <div class="footer__element-icon">
@@ -305,7 +318,7 @@
       <div class="footer__element">
         <h3 class="footer__element-title">
           Наши проекты
-        </div>
+        </h3>
         <div class="footer__element-content">
           <div class="footer__element-content-item">
             <div class="footer__element-icon">
@@ -353,7 +366,7 @@
       <div class="footer__element">
         <h3 class="footer__element-title">
           Социальные сети
-        </div>
+        </h3>
         <div class="footer__element-content">
           <div class="footer__element-content-item">
             <div class="footer__element-icon">
