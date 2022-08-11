@@ -12,30 +12,34 @@
 </head>
 <body>
  
-  <header class="header" id="main">
+  <div class="burger-menu" id="burger-menu"></div>
 
-    <ul class="header__list">
-      <li class="header__list-item header__list-item--active"> 
+  <header class="header" id="main">
+    <div class="burger-header">
+      <div class="header__burger" id="burger"><span></span></div>
+    </div>
+    <ul class="header__list active">
+      <li class="header__list-item header__list-item--active header__list-item--first"> 
         <a class="header__list-item-link" href="#main">
           Главная
         </a>
       </li>
-      <li class="header__list-item">
-        <a class="header__list-item-link" href="#projects">
+      <li class="header__list-item header__list-item--long">
+        <a class="header__list-item-link " href="#projects">
           Наши проекты
         </a>
       </li>
-      <li class="header__list-item">
+      <li class="header__list-item header__list-item--third">
         <a class="header__list-item-link" href="#services">
           Услуги
         </a>
       </li>
-      <li class="header__list-item">
+      <li class="header__list-item header__list-item--fourth">
         <a class="header__list-item-link" href="#news">
           Новости
         </a>
       </li>
-      <li class="header__list-item">
+      <li class="header__list-item header__list-item--fifth">
         <a class="header__list-item-link" href="#contacts">
           Контакты
         </a>
@@ -114,85 +118,92 @@
     </button>
   </section>
 
-  <section class="news" id="news" >
-    <div class="news__standards">
-      <div class="news__desc">
-        <div class="news__title">
-          Высокие стандарты
-          разработки
+  <div class="bg-gray">
+  
+    <section class="news" id="news" >
+      <div class="news__standards">
+        <div class="news__desc">
+          <div class="news__title">
+            Высокие стандарты
+            разработки
+          </div>
+          <div class="news__text">
+            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.  стандартной "рыбой" для текстов на латинице с начала XVI века. 
+          </div>
+          <div class="link" href="#">
+            Подробнее о компании
+          </div>
         </div>
-        <div class="news__text">
-          Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.  стандартной "рыбой" для текстов на латинице с начала XVI века. 
+        <img class="news__img" src="./img/computers.png" alt="computers"/>
+      </div>
+      <div class="news__items">
+        <div class="news__item">
+          <div class="news__item-top">
+            <img class="news__item-img" src="./img/web-programming (1).svg" alt="progect" >
+            <div class="news__item-num">125</div>
+          </div>
+          <div class="news__item-desc">Our projects</div>
         </div>
-        <div class="link">
-          Подробнее о компании
+        <div class="news__item">
+          <div class="news__item-top">
+            <img class="news__item-img" src="./img/web-programming (1).svg" alt="progect" >
+            <div class="news__item-num">125</div>
+          </div>
+          <div class="news__item-desc">Our projects</div>
+        </div>
+        <div class="news__item">
+          <div class="news__item-top">
+            <img class="news__item-img" src="./img/web-programming (1).svg" alt="progect" >
+            <div class="news__item-num">125</div>
+          </div>
+          <div class="news__item-desc">Our projects</div>
+        </div>
+        <div class="news__item">
+          <div class="news__item-top">
+            <img class="news__item-img" src="./img/web-programming (1).svg" alt="progect" >
+            <div class="news__item-num">125</div>
+          </div>
+          <div class="news__item-desc">Our projects</div>
+        </div>
+        <div class="news__item">
+          <div class="news__item-top">
+            <img class="news__item-img" src="./img/web-programming (1).svg" alt="progect" >
+            <div class="news__item-num">125</div>
+          </div>
+          <div class="news__item-desc">Our projects</div>
         </div>
       </div>
-      <img class="news__img" src="./img/Rectangle 2.jpg" alt="computers"/>
-    </div>
-    <div class="news__items">
-      <div class="news__item">
-        <div class="news__item-top">
-          <img class="news__item-img" src="./img/web-programming (1).svg" alt="progect" >
-          <div class="news__item-num">125</div>
-        </div>
-        <div class="news__item-desc">Our projects</div>
-      </div>
-      <div class="news__item">
-        <div class="news__item-top">
-          <img class="news__item-img" src="./img/web-programming (1).svg" alt="progect" >
-          <div class="news__item-num">125</div>
-        </div>
-        <div class="news__item-desc">Our projects</div>
-      </div>
-      <div class="news__item">
-        <div class="news__item-top">
-          <img class="news__item-img" src="./img/web-programming (1).svg" alt="progect" >
-          <div class="news__item-num">125</div>
-        </div>
-        <div class="news__item-desc">Our projects</div>
-      </div>
-      <div class="news__item">
-        <div class="news__item-top">
-          <img class="news__item-img" src="./img/web-programming (1).svg" alt="progect" >
-          <div class="news__item-num">125</div>
-        </div>
-        <div class="news__item-desc">Our projects</div>
-      </div>
-      <div class="news__item">
-        <div class="news__item-top">
-          <img class="news__item-img" src="./img/web-programming (1).svg" alt="progect" >
-          <div class="news__item-num">125</div>
-        </div>
-        <div class="news__item-desc">Our projects</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="projects" id="projects">
-    <div class="projects__title">
-      Наши проекты
-    </div>
-    <div class="projects__text">
-      Lorem Ipsum - это текст-"рыба", часто используемый 
-      в печати и вэб-дизайне. Lorem Ipsum является стандартной 
-      "рыбой" для текстов на латинице с начала XVI века. 
-    </div>
-    <div class="projects__slider">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-      <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
-    </div>
-  </section>
+    <section class="projects" id="projects">
+      <div class="projects__title">
+        Наши проекты
+      </div>
+      <div class="projects__text">
+        Lorem Ipsum - это текст-"рыба", часто используемый 
+        в печати и вэб-дизайне. Lorem Ipsum является стандартной 
+        "рыбой" для текстов на латинице с начала XVI века. 
+      </div>
+      <div class="projects__slider">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+        <img class="projects__slider-item" src="./img/Rectangle 2 (1).jpg">
+      </div>
+    </section>
+
+  </div>
+  
+
+  
 
   <section class="mailing">
     <h3 class="mailing__title">
@@ -202,8 +213,19 @@
       Полезные статьи, акции, новости - получите все это сейчас!
     </div>
     <form class="mailing__form">
-      <input type="text" class="mailing__input" placeholder="Ваш e-mail" required>
-      <button class="mailing__btn" id="show-modal">
+      <input 
+        class="mailing__input" 
+        id="emailAddress" 
+        placeholder="Ваш e-mail"  
+        type="email" 
+        maxLength="64" 
+        pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$"
+        required
+      >
+      <button 
+        class="mailing__btn" 
+        id="show-modal"
+      >
         Подписаться
       </button>
     </form>
@@ -216,9 +238,9 @@
 
     <div class="footer__elements">
       <div class="footer__element">
-        <div class="footer__element-title">
+        <h3 class="footer__element-title">
           Контактная информация
-        </div>
+        </h3>
         <div class="footer__element-content">
           <div class="footer__element-content-item">
             <div class="footer__element-icon footer__element-icon--svg">
@@ -246,11 +268,11 @@
           </div>
         </div>
       </div>
-  
+        
       <div class="footer__element">
-        <div class="footer__element-title">
+        <h3 class="footer__element-title">
           Основные ссылки
-        </div>
+        </h3>
         <div class="footer__element-content">
           <div class="footer__element-content-item">
             <div class="footer__element-icon">
@@ -296,9 +318,9 @@
       </div>
   
       <div class="footer__element">
-        <div class="footer__element-title">
+        <h3 class="footer__element-title">
           Наши проекты
-        </div>
+        </h3>
         <div class="footer__element-content">
           <div class="footer__element-content-item">
             <div class="footer__element-icon">
@@ -344,9 +366,9 @@
       </div>
   
       <div class="footer__element">
-        <div class="footer__element-title">
+        <h3 class="footer__element-title">
           Социальные сети
-        </div>
+        </h3>
         <div class="footer__element-content">
           <div class="footer__element-content-item">
             <div class="footer__element-icon">

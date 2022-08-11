@@ -173,3 +173,29 @@ async function handleFormSubmit(event) {
   const applicantForm = document.querySelector('.mailing__form')
   applicantForm.addEventListener('submit', handleFormSubmit)
 
+
+const burger = document.querySelector('#burger')
+const menu = document.querySelector('#burger-menu')
+const list = document.querySelector('.header__list')
+
+//.header__list-item
+
+const handleShowMenu = (event) => {
+  burger.classList.toggle('active')
+  menu.classList.toggle('active')
+  list.classList.toggle('active')
+
+
+}
+
+const handleClikToLinks = (event) => {
+  if (event.target.closest('.header__list-item')) {
+    burger.classList.toggle('active')
+    menu.classList.toggle('active')
+    list.classList.toggle('active')
+
+  }
+}
+burger.addEventListener("click", handleShowMenu)
+list.addEventListener("click", handleClikToLinks)
+
