@@ -64,6 +64,17 @@
      }
 }
 @media (max-width: 620px) {
+
+    .burger-header {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background: #000;
+        z-index: 13;
+    }
     .burger-menu {
         display: block;
         background: $grey;
@@ -79,12 +90,15 @@
     }
     .header {
         position: relative;
+        &__title {
+            padding-top: 0px;
+        }
         &__list {
             z-index: 12;
             display: block;
             padding: 0;
             margin-top: 20px;
-            position: absolute;
+            position: fixed;
             left: 50%;
             top: 100px;
             transform: translate(-50%, 0%);
@@ -93,8 +107,10 @@
             display: none;
         }
         &__list li {
-            margin-bottom: 20px;
+            padding-bottom: 20px;
             width: 100%;
+            background: $grey;
+            font-size: 18px;
         }
         &__content {
             padding-top: 50%;

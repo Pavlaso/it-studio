@@ -7,7 +7,9 @@
 .burger-menu {
     display: none;
 }
-
+.burger-header {
+    display: none;
+}
 .header {
     background: url(../img/Rectangle.jpg) top center/cover no-repeat ;
     height: 900px;
@@ -15,23 +17,25 @@
     text-align: center;
     &__list {
         display: flex;
-        padding: 40px 0 39px;
+        padding: 40px 0 40px;
         padding-left: 50%;
         margin-bottom: 220px;
-        position: relative;
+        position: fixed;
         transition: all 0.3s ease 0s;
+        background: #000;
+        z-index: 10;
+        width: 100%;
 
-        &::after {
-            content: '';
-            position: absolute;
-            background-color: rgba($color: #a1a1a1, $alpha: 0.5);
-            height: 1px;
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            transition: all 0.3s ease 0s;
-
-        }
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     background-color: rgba($color: #a1a1a1, $alpha: 0.5);
+        //     height: 1px;
+        //     width: 100%;
+        //     left: 0;
+        //     bottom: 0;
+        //     transition: all 0.3s ease 0s;
+        // }
     }
     &__list-item-link {
         color: #fff;
@@ -58,10 +62,11 @@
         &:hover {
             cursor: pointer;
             font-weight: 700;
-            border-bottom: 2px solid #fff;
+           // border-bottom: 2px solid #fff;
         }
     }
     &__title {
+        padding-top: 350px;
         max-width: 829px;
         margin: 20px auto 50px;
         font-weight: 800;
